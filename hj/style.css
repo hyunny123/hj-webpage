@@ -1,0 +1,267 @@
+* {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+}
+
+/*navbar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #264865;
+  padding: 8px 12px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1030;
+  font-family: "Gamja Flower", cursive;
+}
+.navbar_logo {
+  color: #ffcfcf;
+  font-size: 35px;
+}
+.navbar_logo:hover {
+  font-size: 35px;
+  text-decoration: underline;
+}
+.navbar_logo > i {
+  color: #ffcfcf;
+  padding: 8px 12px;
+}
+.navbar_logo > a {
+  color: #ffcfcf;
+}
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar_menu a {
+  padding: 10px 14px;
+  font-size: 30px;
+  color: #ffcfcf;
+}
+.navbar_menu a:hover {
+  color: #e042d8;
+  letter-spacing: 2px;
+}
+.navbar_toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #ffcfcf;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  /*navbar*/
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_toggleBtn {
+    display: block;
+  }
+  .navbar_menu.active {
+    display: flex;
+  }
+  /*fav*/
+  .fav {
+    background-color: #264865;
+    color: #ffcfcf;
+  }
+  .container-fav {
+    flex-direction: column;
+  }
+}
+
+/*title-homepage*/
+.title {
+  padding-top: 350px;
+  padding-bottom: 100px;
+  text-align: center;
+  color: #ece9dc;
+  background-image: url("img/title02_.jpeg");
+  background-size: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 370px;
+  font-family: "Gamja Flower", cursive;
+}
+.title .header-subhead {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+}
+.title .header-head {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #ffcfcf;
+}
+.title .header-head:hover {
+  font-size: 7rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #ffcfcf;
+}
+
+/*about-aboutme*/
+.aboutme {
+  text-align: center;
+  font-family: "Gamja Flower", cursive;
+  margin-bottom: 3rem;
+  color: #264865;
+}
+.aboutme img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.aboutme-img:hover {
+  transform: scale(1.2);
+  border: 0.5rem solid rgba(241, 36, 149, 0.3);
+}
+.aboutme > p {
+  font-size: 1.5rem;
+}
+.round-circle {
+  border-radius: 50%;
+  width: 100%;
+}
+.page-section {
+  background-color: #ffcfcf;
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+.page-section h2.section-head {
+  font-size: 4rem;
+  font-family: "Gamja Flower", cursive;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #264865;
+}
+.page-section h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+/*fav*/
+.fav {
+  background-color: #264865;
+  color: #ffcfcf;
+  justify-content: center;
+}
+.container-fav {
+  display: flex;
+  justify-content: space-between;
+}
+section.fav {
+  list-style: none;
+  font-size: 35px;
+  font-family: "Gamja Flower", cursive;
+  letter-spacing: 5px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+h2.section-head {
+  font-size: 4rem;
+}
+.room {
+  padding-left: 50px;
+}
+.room-text {
+  font-size: 1.2rem;
+}
+.room-text:hover {
+  font-size: 1.2rem;
+  transform: scale(1.2);
+}
+img.roomimg {
+  border: 10px solid #ffcfcf;
+  border-radius: 50%;
+}
+.coffee-text {
+  font-size: 1.2rem;
+}
+.coffee-text:hover {
+  font-size: 1.2rem;
+  transform: scale(1.2);
+}
+img.coffeeimg {
+  border: 10px solid #ffcfcf;
+  border-radius: 50%;
+}
+.trip {
+  padding-right: 50px;
+}
+.trip-text {
+  font-size: 1.2rem;
+}
+.trip-text:hover {
+  font-size: 1.2rem;
+  transform: scale(1.2);
+}
+img.tripimg {
+  border: 10px solid #ffcfcf;
+  border-radius: 50%;
+}
+
+/*footer-contact*/
+footer {
+  font-family: "Gamja Flower", cursive;
+  height: 500px;
+  background-color: #ffcfcf;
+  color: #264865;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  align-items: center;
+}
+
+.contact h2.section-head {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.contact h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.contact-icon {
+  font-size: 50px;
+  list-style: none;
+  padding-top: 30px;
+  text-align: center;
+}
+.contact-icon > a > i {
+  color: #264865;
+}
+.github:hover {
+  color: #e042d8;
+  font-size: 60px;
+}
+.mail {
+  color: #264865;
+}
+.mail:hover {
+  text-decoration: underline;
+  color: #e042d8;
+}
+.velog:hover {
+  color: #e042d8;
+  font-size: 60px;
+}
